@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form  name = "form" class="password-form" action="#" type="POST">
+    <label class="input-wrapper">
+      Ввести пароль
+      <input name = "pwd" type="password" id="js-first-password" placeholder="password">
+      <div class="errors"> </div>
+      <div class = "password__btn" data-target = '#js-first-password'> <img src="./img/open.png" alt="eye"></div>
+    </label>
+    <label class="input-wrapper">
+      Подтвердить пароль
+      <input  name = "pwd2" type="password" id="js-second-password" placeholder="Confirm password">
+      <div class="errors"> </div>
+      <div class = "password__btn" data-target = '#js-second-password'> <img src="./img/open.png" alt="eye"></div>
+    </label>
+    <button type="submit" class="btn">Подтвердить</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>

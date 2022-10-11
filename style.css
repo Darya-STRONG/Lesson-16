@@ -1,0 +1,74 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fefefe;
+  padding: 35px;
+}
+
+label {
+ display: flex;
+ flex-direction: column;
+ font-size: 20px;
+ color: aqua;
+ margin-top: 20px;
+}
+
+input {
+  height: 35px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #fefefe;
+  color: #fefefe;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.input-wrapper {
+ position: relative;
+}
+
+.password__btn {
+  position: absolute;
+  right: 5px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.password__btn::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(45deg);
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.password__btn.active::after{
+  opacity: 0;
+}
+
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.errors {
+  height: 40px;
+  color: red;
+}
